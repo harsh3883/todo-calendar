@@ -1,0 +1,44 @@
+/* App.css */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+.todo-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.todo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+button svg {
+  transition: transform 0.2s ease;
+}
+
+button:hover svg {
+  transform: scale(1.1);
+}
+.todo-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.todo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.todo-card.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
