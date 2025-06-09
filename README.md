@@ -52,7 +52,7 @@ FRONTEND-REACT SETUP
 	npm start
 
 Frontend is live at:
-	
+
 	http://localhost:3000/
 
 API ENDPOINTS:
