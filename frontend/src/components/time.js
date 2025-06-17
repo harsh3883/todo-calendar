@@ -3,11 +3,12 @@ export const formatDate = (date) => {
   return date.toISOString().split("T")[0];
 };
 
-//
+// Format time as HH:MM
 export const formatTime = (time) => {
   return `${time}:00`;
 };
 
+// Check if two dates are the same (ignoring time)
 export const isSameDate = (date1, date2) => {
   return formatDate(date1) === formatDate(date2);
 };
@@ -83,7 +84,7 @@ export const getDurationInMinutes = (startTime, endTime) => {
   return endMinutes - startMinutes;
 };
 
-// Format duration for display
+// Format duration as "Xh Ym"
 export const formatDuration = (startTime, endTime) => {
   const durationMinutes = getDurationInMinutes(startTime, endTime);
   const hours = Math.floor(durationMinutes / 60);
